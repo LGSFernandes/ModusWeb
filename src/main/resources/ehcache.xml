@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.ehcache.org/v3"
+        xsi:schemaLocation="http://www.ehcache.org/v3 https://www.ehcache.org/schema/ehcache-core.xsd">
+
+    <cache alias="templates-vitrine">
+        <expiry><ttl unit="minutes">5</ttl></expiry>
+        <heap>200</heap>
+    </cache>
+
+    <cache alias="categorias">
+        <expiry><ttl unit="minutes">30</ttl></expiry>
+        <heap>50</heap>
+    </cache>
+
+    <cache alias="template-detalhe">
+        <expiry><ttl unit="minutes">10</ttl></expiry>
+        <heap>100</heap>
+    </cache>
+
+    <cache alias="top-downloads">
+        <expiry><ttl unit="minutes">15</ttl></expiry>
+        <heap>10</heap>
+    </cache>
+</config>
